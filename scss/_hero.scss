@@ -1,0 +1,229 @@
+.header{
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+    position: relative;
+    .pop-up-navbar{
+        position: fixed;
+            width: 150px;    
+            right: 0;
+            height: 100%;                        
+            background-color: white;
+            transition: .5s;
+            transform: translateX(150px);
+            button{
+                width: 100px;
+                height: 50px;
+                background-color: black;
+                color: white;
+            }
+            ul{
+                padding: 10px;
+                display: flex;                
+                flex-direction: column;
+                gap: 20px;
+                font-size: 25px;
+                li{
+                    border-bottom: 1px solid gray;
+                }
+            }
+        }
+        .pop-up-navbar.active {
+            transform: translateX(0); 
+        }
+.navbar{    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    .navbar-logo{
+    
+    display: flex;
+    align-items: center;
+        p{
+            font-size: 16px;
+            color: white;
+        }
+    }
+    .options{
+        .navbar-lists{
+            display: flex;
+            justify-content: center;
+            color: #8B8E99;
+            gap: 15px;
+            align-items: center;
+            font-size: 14px;
+            height: 100%;
+            .navbar__list a {
+                display: flex;
+                align-items: center;                
+            }
+        }
+    }
+
+    .icons{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        .fa-bars{
+            color: white;
+            display: none;
+        }
+        
+    }
+}
+}
+
+
+.hero{
+    background-color: black;
+    .hero-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        padding: 102px 0 142px 0; 
+        gap: 184px;
+        .titles-wrapper{
+            margin: 0 auto;
+            h1{                                        
+                font-size: 64px;
+                color: white;
+            }
+            p{
+                color: #8B8E99;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+            .input{  
+                margin-top: 47px;          
+                display: flex;
+                justify-content: space-around;
+                align-items: center; 
+                width: 400px;
+                height: 60px;
+                background-color: white;   
+                border-radius: 15px;    
+
+                .fa-magnifying-glass{
+                    color: blue;
+                }
+                input{
+                    height: 100%;
+                    width: 230px;
+                }
+                button{
+                    width: 90px;
+                    height: 45px;
+                    background-color: blue;
+                    border-radius: 15px;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .image-wrapper{
+            max-width: 461px;   
+        }
+    }     
+}
+
+
+
+
+@media (max-width: 900px) {
+.hero{
+  .hero-wrapper {
+    grid-template-columns: 1fr; 
+    gap: 50px;
+    text-align: center;
+
+    .titles-wrapper {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 14px;
+      }
+      .input {
+        margin: 30px auto 0 auto;
+        width: 100%;
+        max-width: 400px;
+        button{
+            width: 80px;
+        }
+      }
+    }
+
+    .image-wrapper {
+        order: -1;
+      margin: 0 auto;
+      width: 350px;
+      height: auto;
+    }
+  }
+}
+}
+
+
+
+@media (max-width: 600px) {
+
+.header{
+    .navbar{
+        .options{
+            display: none;
+        }
+        .icons{
+            .fa-bars{
+                display: block;
+            }
+        }
+    }
+}
+.hero{
+  .hero-wrapper {
+    padding: 40px 0 80px 0;
+
+    
+    .titles-wrapper{
+    display: flex;
+    width: 380px;
+      height: auto;
+      gap: 10px;
+      padding: 10px;
+      max-width: 100%;
+      max-width: 300px; 
+      h1 {
+      font-size: 35px;
+      }  
+      .input{
+        margin: 0 auto;
+        width: 350px;
+        justify-content: space-evenly;
+        margin-left: -20px;
+
+        input{
+            width: 220px;
+            
+        }
+        button{
+        font-size: 15px;
+      }
+      }
+    }
+
+    .image-wrapper {
+        order: -1;
+      width: 250px;
+    }
+  }
+}
+}

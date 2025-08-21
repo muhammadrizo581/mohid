@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <header class="header">        
+        <div class="container">
+            <div class="pop-up-navbar">
+                <button onclick="hamburgerPopUp()">Cancel</button>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Brands</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Recent</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <img class="apple-watch" src="./assets/apple-watch.svg" alt="">
+                    <p>Mohid</p>
+                </div>
+                <div class="options">
+                    <ul class="navbar-lists">
+                        <li class="navbar__list">
+                            <a href="#">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#">
+                                <span>Brands</span>
+                            </a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#">
+                                <span>Recents</span>
+                            </a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#">
+                                <span>Products</span>
+                            </a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#">
+                                <span>About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <img src="./assets/icoons.svg" alt="">
+                        <i onclick="hamburgerPopUp()" class="fa-solid fa-bars"></i>                
+                </div>                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="titles-wrapper">
+                        <h1>Discover Most Suitable Watches</h1>
+                        <p>Find the best, reliable, and cheap smart watches here. We focus on product quality. Here you
+                            can find smart watches of
+                            almost all brands. So why you are waiting? Just order now!
+                        </p>
+                        <div class="input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Find the best brands">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="./assets/hero-watch.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
