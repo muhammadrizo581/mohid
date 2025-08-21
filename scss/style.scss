@@ -1,8 +1,6 @@
-@import "_global.scss";
-@import "_hero.scss";
-
-body{
-    width: 100%;
-    height: 500vh;
-}
-
+@import "global";
+@import "hero";
+@import "watches";
+@import "latest";
+@import "reviews";
+@import "footer";
